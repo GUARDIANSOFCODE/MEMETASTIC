@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #0f1b21;
+    color: white;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+}
+
+/* Centering and spacing the meme generation container */
+.meme-gen {
+    text-align: center;
+    max-width: 600px; /* Restricting width for better layout */
+    margin: 20px auto; /* Centering with margin */
+    padding: 20px; /* Padding for aesthetics */
+    border-radius: 15px; /* Rounded corners for elegance */
+    background: rgba(255, 255, 255, 0.1); /* Slight background for contrast */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.meme-gen img {
+    height: 430px;
+    width: 100%; /* Making the image responsive */
+    object-fit: cover;
+    border-radius: 10px; /* Adding rounded corners to the image */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.meme-gen img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.meme-gen h1 {
+    color: #DE1B89;
+    font-size: 48px; 
+    margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700; /* Making it bolder for emphasis */
+    text-shadow: 0 0 10px rgba(255, 0, 150, 0.5); /* Soft glow for elegance */
+}
+
+.meme-gen .gen-meme-btn {
+    padding: 12px 25px; /* Increased padding for a larger button */
+    border: none;
+    margin: 10px 0;
+    font-size: 20px;
+    color: #DE1B89;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: all 300ms ease; /* Slightly faster transition */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for button */
+}
+
+.meme-gen .gen-meme-btn:hover {
+    color: #c9356c;
+    background: rgba(255, 255, 255, 0.4); /* Lighten background on hover */
+    text-shadow: 0 0 8px #ff347f; /* Glow effect */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.meme-gen .meme-title {
+    font-size: 24px; /* Font size for title */
+    font-weight: 600; /* Bold title */
+    margin: 15px 0; /* Spacing */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Subtle glow */
+}
+
+.meme-gen .meme-author {
+    margin: 8px;
+    font-size: 18px; /* Font size for author */
+    color: #ddd; /* Softer color for the author */
+}
